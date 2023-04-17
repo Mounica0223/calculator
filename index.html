@@ -121,9 +121,8 @@
 		}					//clear
 
 		function btn(input){
-			var oldinput=a.value;
-			var newinput=oldinput+""+input;
-			a.value=newinput;
+			a.value+=input
+			
 		}					//all buttons
 
 		function del(){
@@ -131,10 +130,11 @@
 		}					//deleting the last input
 
 		function equal(){
-			var c=a.value;
-			c=c.replace("","")
-			var result=eval(c);
+			let c=a.value;
+			let result=eval(c);
 			a.value=result;
+			
+			
 		}					//final answer 
 
 	</script>
